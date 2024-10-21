@@ -11,8 +11,133 @@
 @import url('./animations.css');
 
 /* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
 @import url('./badges.css');
 @import url('./back-link.css');
-@import url('./footer.css');
+
+
+
+@import "simplelightbox/dist/simple-lightbox.min.css";
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* 1-gallery */
+
+.gallery {
+  max-width: 1128px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 0 auto;
+  padding: 24px;
+  justify-content: center;
+}
+
+.gallery-item {
+  width: calc((100% - 48px) / 3);
+  transition: transform 0.3s;
+}
+
+.gallery-item:hover,
+.gallery-item:focus {
+  transform: scale(1.05);
+}
+
+.gallery-image {
+  max-height: 200px;
+}
+
+.sl-wrapper {
+  background: rgba(46, 47, 66, 0.8);
+}
+
+/* 1-gallery */
+
+/* 2-form */
+
+.feedback-form {
+  margin: 0 auto;
+  padding: 24px;
+
+  max-width: 408px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+a .feedback-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.feedback-form input {
+  width: 360px;
+
+  border-radius: 4px;
+  border: 1px solid #808080;
+  outline: transparent;
+
+  margin-bottom: 8px;
+}
+
+.feedback-form input:focus {
+  border-color: #000000;
+}
+
+.feedback-form textarea {
+  width: 360px;
+  height: 80px;
+
+  border-radius: 4px;
+  border: 1px solid #808080;
+  outline: transparent;
+
+  margin-bottom: 16px;
+  resize: none;
+}
+
+.feedback-form textarea:focus {
+  border-color: #000000;
+}
+
+.feedback-form button {
+  display: inline-block;
+
+  width: 95px;
+  height: 40px;
+
+  border-radius: 8px;
+  border: none;
+  background-color: #4e75ff;
+  color: #fff;
+
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 8px 12px;
+
+  cursor: pointer;
+}
+
+.feedback-form button:hover {
+  background-color: #6c8cff;
+}
+
+input,
+textarea {
+  padding: 8px;
+  font-family: inherit;
+}
+
+/* 2-form */
